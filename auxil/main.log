@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  16 APR 2025 14:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  16 APR 2025 18:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -2176,11 +2176,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 (C:/Users\Marjan\Documents\JavaProjects\aws-machine-learning-speciality-notes\a
-uxil\main.toc)
+uxil\main.toc
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
+
+
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+))
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3]
+
+[3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2219,7 +2226,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 3.
-[9]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 59.
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+4.
+(C:\Users\Marjan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+Underfull \vbox (badness 6252) has occurred while \output is active []
+
+ [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2228,10 +2249,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10
+[10]
+Overfull \hbox (26.55693pt too wide) in paragraph at lines 224--225
+[][] 
+ []
 
-]
-Chapter 4.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2244,7 +2274,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [12
 
 ]
-Chapter 5.
+Chapter 4.
 [13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2257,7 +2287,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [14
 
 ]
-Chapter 6.
+Chapter 5.
 [15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2270,7 +2300,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [16
 
 ]
-Chapter 7.
+Chapter 6.
 [17]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2283,7 +2313,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [18
 
 ]
-Chapter 8.
+Chapter 7.
 [19]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2296,7 +2326,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [20
 
 ]
-Chapter 9.
+Chapter 8.
 [21]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2309,7 +2339,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22
 
 ]
-Chapter 10.
+Chapter 9.
 [23]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2322,35 +2352,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [24
 
 ]
-Chapter 11.
+Chapter 10.
 [25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[26
+
+]
+Chapter 11.
+[27]
 (C:/Users\Marjan\Documents\JavaProjects\aws-machine-learning-speciality-notes\a
 uxil\main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  3ABA4BF4C3C0810F772C36ADFC97AE8E;2399.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: EAF8B4A92B14731599CB2EF08CAC0CF8;3165.
  ) 
 Here is how much of TeX's memory you used:
- 31627 strings out of 478864
- 734699 string characters out of 2848186
- 1253827 words of memory out of 3000000
- 49018 multiletter control sequences out of 15000+600000
- 411728 words of font info for 38 fonts, out of 8000000 for 9000
+ 32365 strings out of 478864
+ 752932 string characters out of 2848186
+ 1279827 words of memory out of 3000000
+ 49726 multiletter control sequences out of 15000+600000
+ 419683 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,89p,723b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,17n,89p,723b,2151s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
-:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pf
-b><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8
-a.pfb>
+:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Marjan/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Marjan/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Marjan/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
 Output written on C:/Users\Marjan\Documents\JavaProjects\aws-machine-learning-s
-peciality-notes\out\main.pdf (25 pages, 41550 bytes).
+peciality-notes\out\main.pdf (27 pages, 111683 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

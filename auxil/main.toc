@@ -1,11 +1,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Data Engineering}{7}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Exploratory Data Analysis}{9}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Modeling, Part 1: General Deep Learning and Machine Learning}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Modeling, Part 2: Amazon SageMaker}{13}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Modeling, Part 3: High-Level ML Services}{15}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Modeling, Part 4: Wrapping up and Labs}{17}{chapter.7}%
-\contentsline {chapter}{\numberline {8}ML Implementation and Operationsl}{19}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Practice Exam Questions}{21}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Generative AI: Transformers GPT, Self-Attention and Foundation Models}{23}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Wrapping Up}{25}{chapter.11}%
+\contentsline {subsection}{\numberline {3.0.1}Python stuff}{9}{subsection.3.0.1}%
+\contentsline {subsection}{\numberline {3.0.2}Types of Data}{9}{subsection.3.0.2}%
+\contentsline {subsubsection}{Numerical}{9}{section*.2}%
+\contentsline {subsubsection}{Categorical}{9}{section*.3}%
+\contentsline {subsubsection}{Ordinal}{9}{section*.4}%
+\contentsline {subsubsection}{Data Distributions}{10}{section*.5}%
+\contentsline {subsection}{\numberline {3.0.3}Time series analysis}{11}{subsection.3.0.3}%
+\contentsline {subsection}{\numberline {3.0.4}Time Series Analysis: GDP in the UK (Fake Data)}{11}{subsection.3.0.4}%
+\contentsline {chapter}{\numberline {4}Modeling, Part 1: General Deep Learning and Machine Learning}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Modeling, Part 2: Amazon SageMaker}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Modeling, Part 3: High-Level ML Services}{17}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Modeling, Part 4: Wrapping up and Labs}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}ML Implementation and Operationsl}{21}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Practice Exam Questions}{23}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Generative AI: Transformers GPT, Self-Attention and Foundation Models}{25}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Wrapping Up}{27}{chapter.11}%

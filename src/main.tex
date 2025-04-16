@@ -56,6 +56,187 @@
 
     \chapter{Exploratory Data Analysis}
 
+    \subsection{Python stuff}
+
+    \subsection{Types of Data}
+
+    \begin{itemize}
+        \item Numerical
+        \item Categorical
+        \item Ordinal
+    \end{itemize}
+
+    \subsubsection{Numerical}
+    - Represents some sort of quantitative measurement - Heights of people, page load times, stock prices etc
+    - Discrete Data - Integer based; often counts of some event
+    - Continuous Data - Has an infinite number of possible values
+
+    \subsubsection{Categorical}
+    - Qualitative data that has no inherent mathematical meaning
+    - Can assign number to categories in order to represent them more compactly, but the numbers don't have a mathematical meaning.
+
+    \subsubsection{Ordinal}
+    - A mixture of numerical and categorical
+    - Categorical data that has mathematical meaning
+
+    \subsubsection{Data Distributions}
+
+
+% Example Normal Distribution: Wealth in the UK by Age (Dummy Example with Higher Peak)
+
+    \begin{tikzpicture}
+        \begin{axis}
+            [
+            width=\textwidth,   % Set plot width to match text width
+            height=7cm,        % Optional height adjustment
+            xlabel={Age},      % X-axis label
+            ylabel={Wealth (in £)}, % Y-axis label
+            grid=both,         % Draw grid
+            grid style={dashed, gray!30}, % Style grid lines
+            xtick={20,30,40,50,60,70,80}, % Define x-axis ticks
+            ymin=0, ymax=0.1,  % Y-axis range (increased to make the peak higher)
+            samples=100        % Number of samples for smoothness
+            ]
+
+            \addplot[very thick, blue, domain=20:80]
+            {1/(8*sqrt(2*pi)) * exp(-0.5*((x-50)/15)^2)};
+            \addlegendentry{Dummy Wealth Distribution by Age}
+        \end{axis}
+    \end{tikzpicture}
+    
+% Comments:
+% - This is a dummy example of a wealth distribution in the UK by age.
+% - The curve assumes a mean age of 50 (highest wealth concentration) 
+%   and a standard deviation of 15 years.
+% - To increase the peak, the denominator in the normal distribution equation was adjusted.
+% - This does not represent real-world data and is purely illustrative.
+
+
+% Bernoulli Distribution Example
+    \begin{tikzpicture}
+        \begin{axis}
+            [
+            ybar,
+            bar width=15pt,
+            ymin=0,
+            ymax=1.2,
+            xtick={0,1},
+            xticklabels={$0$, $1$},
+            xlabel={Outcome (Success or Failure)},
+            ylabel={Probability},
+            grid=both,
+            grid style={dashed, gray!30},
+            width=10cm,
+            height=6cm,
+            nodes near coords,
+            enlargelimits=0.15,
+            symbolic x coords={0,1}
+            ]
+            \addplot[ybar, fill=blue] coordinates {
+                (0,0.4) (1,0.6)
+            };
+            \addlegendentry{Bernoulli Distribution with $P(X=1) = 0.6$}
+        \end{axis}
+    \end{tikzpicture}
+
+% Comments:
+% - This plot represents an example Bernoulli distribution.
+% - P(X=1) = 0.6 means probability of success is 0.6, and thus P(X=0) = 0.4.
+% - Bars indicate probabilities of both outcomes.
+    \subsection{Time series analysis}
+
+    \subsection{Time Series Analysis: GDP in the UK (Fake Data)}
+
+% Example Fake GDP Time Series Chart Over 50 Years
+    \begin{tikzpicture}
+        \begin{axis}
+            [
+            width=\textwidth,
+            height=7cm,
+            xlabel={Year},
+            ylabel={GDP (in Trillions of £)},
+            grid=both,
+            grid style={dashed, gray!30},
+            ymin=0,
+            xtick={1975, 1985, 1995, 2005, 2015, 2025},
+            legend pos=north west,
+            title={\textbf{UK GDP Growth Over 50 Years (Fake Data)}}
+            ]
+            \addplot[
+                thick,
+                color=blue,
+                mark=*,
+                samples at={1975, 1980, 1990, 2000, 2010, 2020, 2025}
+            ] coordinates {
+                (1975, 0.5) (1980, 0.7) (1990, 1.2) (2000, 1.8) (2010, 2.3) (2020, 2.7) (2025, 3.2)
+            };
+            \addlegendentry{Fake GDP Data}
+        \end{axis}
+    \end{tikzpicture}
+
+% Comments:
+% - This is a fake time series example showing GDP in the UK over 50 years.
+% - The data is not real and serves only for illustrative purposes.
+% - The chart represents a hypothetical increase in GDP from 1975 to 2025.
+
+
+% Example Random Walk Chart
+    \begin{tikzpicture}
+        \begin{axis}
+        [
+            width=\textwidth,
+            height=8cm,
+            xlabel={Step},
+            ylabel={Value},
+            grid=both,
+            grid style={dashed, gray!30},
+            ymin=-10, ymax=10,
+            xmin=0, xmax=100,
+            title={\textbf{Random Walk Example}},
+            legend pos=south east,
+        ]
+            % Simulated random walk values
+            \addplot[
+                thick,
+                color=cyan,
+                mark=none
+            ] coordinates {
+                (0, 0) (1, 0.6) (2, -0.5) (3, 1.2) (4, 0.8) (5, 1.4) (6, 2.1)
+                (7, 1.7) (8, 0.9) (9, 1.5) (10, 2.3) (11, 1.6) (12, 2.8)
+                (13, 2.2) (14, 1.9) (15, 2.6) (16, 1.8) (17, 2.0) (18, 2.7)
+                (19, 3.5) (20, 4.1) (21, 3.2) (22, 2.5) (23, 1.9) (24, 2.4)
+                (25, 2.6) (26, 3.9) (27, 3.2) (28, 2.8) (29, 3.0) (30, 2.7)
+                (31, 3.5) (32, 2.8) (33, 1.6) (34, 0.8) (35, 1.5) (36, 1.2)
+                (37, 0.5) (38, 0.9) (39, -0.3) (40, -1.0) (41, -1.5) (42, -0.8)
+                (43, 0.2) (44, -0.1) (45, -0.6) (46, -1.5) (47, -2.8) (48, -3.0)
+                (49, -4.2) (50, -3.8) (51, -3.0) (52, -3.6) (53, -2.9) (54, -2.5)
+                (55, -2.7) (56, -2.0) (57, -3.1) (58, -3.8) (59, -4.0) (60, -3.2)
+                (61, -2.9) (62, -1.6) (63, -2.2) (64, -1.8) (65, -0.4) (66, 0.2)
+                (67, 0.0) (68, -0.8) (69, -0.4) (70, 0.1) (71, 1.2) (72, 0.7)
+                (73, -0.5) (74, -0.1) (75, -0.6) (76, -1.2) (77, -0.8) (78, -0.3)
+                (79, -0.5) (80, 0.2) (81, 1.3) (82, 0.9) (83, 1.2) (84, 0.5)
+                (85, 1.8) (86, 2.0) (87, 2.5) (88, 2.9) (89, 3.5) (90, 3.2)
+                (91, 2.5) (92, 2.7) (93, 3.0) (94, 3.2) (95, 3.7) (96, 2.9)
+                (97, 2.2) (98, 1.8) (99, 2.0) (100, 2.5)
+            };
+            \addlegendentry{Random Walk}
+        \end{axis}
+    \end{tikzpicture}
+
+    %TODO ------ revisit this topic
+    \subsection{Introduction to Amazon Athena}
+    \subsection{Overview of Amazon Quicksight}
+    \subsection{Types of visualisations and when to use them}
+    \subsection{Elastic MapReduce (EMR) amd Hadoop Overview}
+    \subsection{Apache Spark on EMR}
+    \subsection{Feature Engineering and the Curse of Dimensionality}
+    \subsection{Inputing Missing Data}
+    \subsection{Dealing with Unbalanced Data}
+    \subsection{Handling Outliers}
+    \subsection{Binning, Transforming, Encoding, Scaling and Shuffling}
+    \subsection{Amazon SageMaker Ground Truth and Label Generation}
+    \subsection{Lab 1}
+    \subsection{Lab 2}
 
     \chapter{Modeling, Part 1: General Deep Learning and Machine Learning}
 
